@@ -6,3 +6,8 @@ export enum Comparison {
     equal = 0,
     after = 1
 }
+
+/**
+ * The type of a function that compares two values of type T.
+ */
+export type Comparator<T> = (a: T, b: T) => Comparison;
