@@ -1,18 +1,19 @@
 {
-  "name": "@softwareventures/compare",
+  "name": "@softwareventures/ordered",
   "version": "0.0.0",
-  "description": "Simple types and functions for comparing values",
-  "repository": "github:softwareventures/compare",
+  "description": "Simple types and functions for comparing ordered values",
+  "repository": "github:softwareventures/ordered",
   "keywords": [
     "compare",
-    "TypeScript"
+    "TypeScript",
+    "ordered"
   ],
   "author": "Daniel Cassidy <mail@danielcassidy.me.uk>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/softwareventures/compare/issues"
+    "url": "https://github.com/softwareventures/ordered/issues"
   },
-  "homepage": "https://github.com/softwareventures/compare",
+  "homepage": "https://github.com/softwareventures/ordered",
   "scripts": {
     "prepare": "tslint --project . && tsc",
     "lint": "tslint --project ."
