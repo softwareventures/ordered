@@ -11,3 +11,19 @@ export enum Comparison {
  * The type of a function that compares two values of type T.
  */
 export type Comparator<T> = (a: T, b: T) => Comparison;
+
+/**
+ * A general purpose comparator for comparing primitive values.
+ */
+export const compare: Comparator<string> & Comparator<number> & Comparator<boolean> =
+    <T extends string | number | boolean>(a: T, b: T) => {
+        if (a < b) {
+            return Comparison.before;
+        } else if (a === b) {
+            return Comparison.equal;
+        } else if (a > b) {
+            return Comparison.after;
+        } else {
+            throw new Error("Invalid comparison");
+        }
+    };
