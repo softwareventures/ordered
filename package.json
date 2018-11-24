@@ -12,5 +12,8 @@
   "bugs": {
     "url": "https://github.com/softwareventures/compare/issues"
   },
-  "homepage": "https://github.com/softwareventures/compare"
+  "homepage": "https://github.com/softwareventures/compare",
+  "devDependencies": {
+    "typescript": "^3.1.6"
+  }
 }
