@@ -27,3 +27,22 @@ export const compare: Comparator<string> & Comparator<number> & Comparator<boole
             throw new Error("Invalid comparison");
         }
     };
+
+/**
+ * Returns a new comparator that gives opposite results to the provided
+ * comparator.
+ */
+export function reverse<T>(comparator: Comparator<T>): Comparator<T> {
+    return (a: T, b: T) => {
+        switch (comparator(a, b)) {
+            case Comparison.before:
+                return Comparison.after;
+            case Comparison.equal:
+                return Comparison.equal;
+            case Comparison.after:
+                return Comparison.before;
+            default:
+                throw new Error("Invalid comparison");
+        }
+    };
+}
