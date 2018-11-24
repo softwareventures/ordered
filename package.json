@@ -1,0 +1,16 @@
+{
+  "name": "@softwareventures/compare",
+  "version": "0.0.0",
+  "description": "Simple types and functions for comparing values",
+  "repository": "github:softwareventures/compare",
+  "keywords": [
+    "compare",
+    "TypeScript"
+  ],
+  "author": "Daniel Cassidy <mail@danielcassidy.me.uk>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/softwareventures/compare/issues"
+  },
+  "homepage": "https://github.com/softwareventures/compare"
+}
