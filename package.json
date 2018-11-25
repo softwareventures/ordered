@@ -18,6 +18,7 @@
     "prepare": "tslint --project . && tsc",
     "lint": "tslint --project ."
   },
+  "sideEffects": false,
   "devDependencies": {
     "@softwareventures/tslint-rules": "^0.5.1",
     "tslint": "^5.11.0",
