@@ -1,6 +1,6 @@
 {
   "name": "@softwareventures/ordered",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Simple types and functions for comparing ordered values",
   "repository": "github:softwareventures/ordered",
   "keywords": [
