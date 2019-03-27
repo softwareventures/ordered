@@ -4,7 +4,8 @@
 export enum Comparison {
     before = -1,
     equal = 0,
-    after = 1
+    after = 1,
+    undefined = NaN
 }
 
 /**
@@ -24,7 +25,7 @@ export const compare: Comparator<string> & Comparator<number> & Comparator<boole
         } else if (a > b) {
             return Comparison.after;
         } else {
-            throw new Error("Invalid comparison");
+            return Comparison.undefined;
         }
     };
 
@@ -33,16 +34,5 @@ export const compare: Comparator<string> & Comparator<number> & Comparator<boole
  * comparator.
  */
 export function reverse<T>(comparator: Comparator<T>): Comparator<T> {
-    return (a: T, b: T) => {
-        switch (comparator(a, b)) {
-            case Comparison.before:
-                return Comparison.after;
-            case Comparison.equal:
-                return Comparison.equal;
-            case Comparison.after:
-                return Comparison.before;
-            default:
-                throw new Error("Invalid comparison");
-        }
-    };
+    return (a: T, b: T) => -comparator(a, b);
 }
