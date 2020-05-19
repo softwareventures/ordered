@@ -27,7 +27,7 @@
     "semantic-release": "17.0.7"
   },
   "dependencies": {
-    "tslib": "^1.9.3"
+    "tslib": "^1.9.3 || ^2.0.0"
   },
   "config": {
     "commitizen": {
