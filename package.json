@@ -13,7 +13,6 @@
   "repository": "github:softwareventures/ordered",
   "license": "ISC",
   "scripts": {
-    "lint": "tsc --noEmit",
     "prepare": "tslint --project . && tsc",
     "semantic-release": "semantic-release",
     "test": "echo No tests yet"
