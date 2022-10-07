@@ -15,7 +15,7 @@
   "scripts": {
     "fix": "tsc --noEmit && tslint --fix --project .",
     "lint": "tsc --noEmit && tslint --project .",
-    "prepare": "tslint --project . && tsc",
+    "prepare": "tsc",
     "semantic-release": "semantic-release",
     "test": "echo No tests yet"
   },
