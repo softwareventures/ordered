@@ -43,3 +43,10 @@ export function reverse<T>(comparator: Comparator<T>): Comparator<T> {
 export function equal(a: unknown, b: unknown): boolean {
     return a === b;
 }
+
+/**
+ * A general purpose inequality comparison, using the `!==` operator.
+ */
+export function notEqual(a: unknown, b: unknown): boolean {
+    return a !== b;
+}
