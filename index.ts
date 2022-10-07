@@ -36,3 +36,10 @@ export const compare: Comparator<string> & Comparator<number> & Comparator<boole
 export function reverse<T>(comparator: Comparator<T>): Comparator<T> {
     return (a: T, b: T) => -comparator(a, b);
 }
+
+/**
+ * A general purpose equality comparison, using the `===` operator.
+ */
+export function equal(a: unknown, b: unknown): boolean {
+    return a === b;
+}
